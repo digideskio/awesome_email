@@ -5,6 +5,9 @@ Check out the demo application:
 "http://opensource.imedo.de/htmlmail":http://opensource.imedo.de/htmlmail
 
 Install the plugin: 
+*<code>script/plugin install git://github.com/gzminiz/awesome_email.git</code>*
+
+Original: 
 *<code>script/plugin install git://github.com/imedo/awesome_email.git</code>*
 
 Learn how to use it below.
@@ -63,7 +66,8 @@ Be sure to follow these simple conventions or otherwise awesome_emails's magic w
 * The layout must be located inside <code>app/views/layouts/{mailer_name}</code>
 * If you send mutlipart mails, check out the conventions on how to name your files: "http://rails.rubyonrails.com/classes/ActionMailer/Base.html":http://rails.rubyonrails.com/classes/ActionMailer/Base.html
 ** So if you have these files inside of /app/views/{mailer_name}: *signup_notification.text.plain.erb*, *signup_notification.text.html.erb* ActionMailer will send a multipart mail with two parts: *text/plain* and *text/html*
-* Your CSS file must be inside of <code>/public/stylesheets</code>
+* Your CSS file must be inside of <code>/public/stylesheets</code> if you only supply the file name
+* Your CSS can be anywhere in /public if you supply the relative path.
 
 h2. Dependencies
 
